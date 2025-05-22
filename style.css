@@ -1,0 +1,107 @@
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  color: #333;
+}
+
+.about-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.about-section h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-block {
+  margin-bottom: 40px;
+}
+
+.section-block h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.grid.two .img-box {
+  flex: 0 0 calc(50% - 10px);
+}
+
+.grid.three .img-box {
+  flex: 0 0 calc(33.33% - 13.33px);
+}
+
+.img-box {
+  background-color: #ddd;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 10px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  display: block;
+  margin: 5% auto;
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #000;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+ 
